@@ -1,0 +1,50 @@
+<mat-card class="w-100">
+  <mat-card-content>
+    <h4 class="mb-56">Add TextileTechnology Form</h4>
+    <form [formGroup]="form" (ngSubmit)="add()">
+      <mat-form-field class="w-100 fs-16" appearance="outline">
+        <mat-label>Coursename</mat-label>
+        <input matInput formControlName="coursename" />
+      </mat-form-field>
+
+      <mat-form-field class="w-100 fs-16" appearance="outline">
+        <mat-label>Coursedescription</mat-label>
+        <input matInput formControlName="coursedescription" />
+      </mat-form-field>
+
+      <mat-form-field class="w-100 fs-16" appearance="outline">
+        <mat-label>Coursetype</mat-label>
+        <input matInput formControlName="coursetype" />
+      </mat-form-field>
+
+      <mat-form-field class="w-100 fs-16" appearance="outline">
+        <mat-label>Courseduration</mat-label>
+        <input matInput formControlName="courseduration" />
+      </mat-form-field>
+
+      <mat-form-field class="w-100 fs-16" appearance="outline">
+        <mat-label>Coursechedule</mat-label>
+        <input matInput formControlName="coursechedule" />
+      </mat-form-field>
+
+      <mat-form-field class="w-100 fs-16" appearance="outline">
+        <mat-label>Coursefee</mat-label>
+        <input matInput formControlName="coursefee" />
+      </mat-form-field>
+
+      <mat-form-field class="w-100 fs-16" appearance="outline">
+        <mat-label>Mobilenumber</mat-label>
+        <input matInput formControlName="mobilenumber" />
+      </mat-form-field>
+
+      <mat-form-field class="w-100 fs-16" appearance="outline">
+        <mat-label>Dateofjoining</mat-label>
+        <input matInput formControlName="dateofjoining" />
+      </mat-form-field>
+      <div class="button-row">
+        <button mat-raised-button color="primary" (click)="back()">Back</button>
+        <button mat-raised-button color="primary">Add</button>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>

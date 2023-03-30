@@ -1,0 +1,106 @@
+<mat-card class="w-100">
+  <mat-card-content>
+    <h4 class="mb-56">Edit NanoScienceAndTechnology Form</h4>
+    <form [formGroup]="form" (ngSubmit)="edit()">
+      <mat-form-field class="w-100 fs-16" appearance="outline">
+        <mat-label>Coursename</mat-label>
+        <input
+          matInput
+          formControlName="coursename"
+          [(ngModel)]="data.coursename"
+        />
+        <mat-error *ngIf="handleError('coursename', 'required')">
+          This field is required
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="w-100 fs-16" appearance="outline">
+        <mat-label>Coursedescription</mat-label>
+        <input
+          matInput
+          formControlName="coursedescription"
+          [(ngModel)]="data.coursedescription"
+        />
+        <mat-error *ngIf="handleError('coursedescription', 'required')">
+          This field is required
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="w-100 fs-16" appearance="outline">
+        <mat-label>Coursetype</mat-label>
+        <input
+          matInput
+          formControlName="coursetype"
+          [(ngModel)]="data.coursetype"
+        />
+        <mat-error *ngIf="handleError('coursetype', 'required')">
+          This field is required
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="w-100 fs-16" appearance="outline">
+        <mat-label>Courseduration</mat-label>
+        <input
+          matInput
+          formControlName="courseduration"
+          [(ngModel)]="data.courseduration"
+        />
+        <mat-error *ngIf="handleError('courseduration', 'required')">
+          This field is required
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="w-100 fs-16" appearance="outline">
+        <mat-label>Coursechedule</mat-label>
+        <input
+          matInput
+          formControlName="coursechedule"
+          [(ngModel)]="data.coursechedule"
+        />
+        <mat-error *ngIf="handleError('coursechedule', 'required')">
+          This field is required
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="w-100 fs-16" appearance="outline">
+        <mat-label>Coursefee</mat-label>
+        <input
+          matInput
+          formControlName="coursefee"
+          [(ngModel)]="data.coursefee"
+        />
+        <mat-error *ngIf="handleError('coursefee', 'required')">
+          This field is required
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="w-100 fs-16" appearance="outline">
+        <mat-label>Mobilenumber</mat-label>
+        <input
+          matInput
+          formControlName="mobilenumber"
+          [(ngModel)]="data.mobilenumber"
+        />
+        <mat-error *ngIf="handleError('mobilenumber', 'required')">
+          This field is required
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="w-100 fs-16" appearance="outline">
+        <mat-label>Dateofjoining</mat-label>
+        <input
+          matInput
+          formControlName="dateofjoining"
+          [(ngModel)]="data.dateofjoining"
+        />
+        <mat-error *ngIf="handleError('dateofjoining', 'required')">
+          This field is required
+        </mat-error>
+      </mat-form-field>
+      <div class="button-row">
+        <button mat-raised-button color="primary" (click)="back()">Back</button>
+        <button mat-raised-button color="primary">Update</button>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>
